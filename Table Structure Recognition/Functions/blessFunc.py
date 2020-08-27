@@ -324,7 +324,7 @@ def borderless(table, image, res_cells):
         # print(tbox)
 
     # cv2.imshow("text chunks", im2)
-    cv2_imshow("text chunks", im2)
+    cv2_imshow(im2)
     cv2.waitKey(0)
 
     def rowstart(val):

@@ -11,7 +11,7 @@ def line_detection(image):
     bw = cv2.bitwise_not(bw)
     ## To visualize image after thresholding ##
     # cv2.imshow("bw",bw)
-    cv2_imshow("bw",bw)
+    cv2_imshow(bw)
     cv2.waitKey(0)
     ###########################################
     horizontal = bw.copy()
