@@ -30,6 +30,7 @@ if __name__ == "__main__":
     # List of images in the image_path
     imgs = glob.glob(image_path)
     for i in imgs:
+        print("i : ", i)
         result = inference_detector(model, i)
         res_border = []
         res_bless = []
