@@ -6,15 +6,15 @@ import lxml.etree as etree
 import glob
 import argparse
 
-parser = argparse.ArgumentParser(description='PyTorch code: Mahalanobis detector')
-parser.add_argument('--img_path')
+# parser = argparse.ArgumentParser(description='PyTorch code: Mahalanobis detector')
 # parser.add_argument('--img_path')
-args = parser.parse_args()
+# # parser.add_argument('--img_path')
+# args = parser.parse_args()
 
 
 ############ To Do ############
-# image_path = 'path to directory of images'
-xmlPath = '/content/drive/My Drive/xml_path'
+image_path = '/content/drive/My Drive/ICDAR2019/Cell_images'
+xmlPath = '/content/drive/My Drive/ICDAR2019/xml_path'
 
 config_fname = '/content/CascadeTabNet/Config/cascade_mask_rcnn_hrnetv2p_w32_20e.py'
 checkpoint_path = "/content/"
