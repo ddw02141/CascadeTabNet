@@ -4,6 +4,7 @@ import cv2
 from Functions.blessFunc import borderless
 import lxml.etree as etree
 import glob
+import os
 import argparse
 
 # parser = argparse.ArgumentParser(description='PyTorch code: Mahalanobis detector')
@@ -28,7 +29,8 @@ if __name__ == "__main__":
     model = init_detector(config_fname, checkpoint_path+epoch)
 
     # List of images in the image_path
-    imgs = glob.glob(image_path)
+    # imgs = glob.glob(image_path)
+    imgs = os.listdir(image_path)
     for i in imgs:
         print("i : ", i)
         result = inference_detector(model, i)
