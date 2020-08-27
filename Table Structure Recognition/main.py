@@ -23,7 +23,7 @@ epoch = 'epoch_36.pth'
 
 if __name__ == "__main__":
     
-    image_path = args.img_path
+    # image_path = args.img_path
 
     model = init_detector(config_fname, checkpoint_path+epoch)
 
